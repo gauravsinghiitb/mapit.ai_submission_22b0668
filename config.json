@@ -1,0 +1,32 @@
+{
+  "keywords": {
+    "ancient_history": {
+      "harappan": ["Harappan Civilization", "Urban Planning", "Archaeological Sites"],
+      "ashoka": ["Mauryan Empire", "Ashokan Edicts"],
+      "gupta": ["Gupta Period", "Literature"],
+      "eripatti": ["Revenue Systems", "Village Institutions"],
+      "ghatikas": ["Temple Education"],
+      "surgical": ["History of Indian Science", "Scientific Advancements"],
+      "burzahom": ["Archaeological Sites", "Material Culture", "Chalcolithic Sites"]
+    },
+    "economics": {
+      "gdp": ["Macroeconomics", "National Income"],
+      "inflation": ["Monetary Policy", "Economic Policy"],
+      "phillips": ["Phillips Curve", "Macroeconomics"]
+    },
+    "math": {
+      "matrix": ["Linear Algebra"],
+      "derivative": ["Calculus", "Differentiation"],
+      "equation": ["Algebra"]
+    },
+    "physics": {
+      "quantum": ["Quantum Mechanics"],
+      "newton": ["Classical Mechanics", "Newton's Laws"],
+      "heisenberg": ["Quantum Mechanics", "Uncertainty Principle"]
+    }
+  },
+  "synonyms": {
+    "ancient_history": {
+      "harappan": ["indus valley", "harappa"],
+      "ashoka": ["asoka", "maurya"],
+      "surgical": ["surgery", "medical"]}}}
