@@ -13,6 +13,75 @@ This project is a Python tool that digs into competitive exam questions (like UP
 - **Logging**: Keeps track of what's happening in a log file for easy debugging.
 - **Output**: Spits out concepts to the console and a CSV file, plus suggested keywords for improvement.
 
+# the outputs- 
+<small>
+Loaded 20 Questions for Subject: Physics
+
+
+**Question 1: Electrostatics**  
+Suggested Keywords: charges, charges, charges  
+
+**Question 2: Electrostatics**  
+Suggested Keywords: constant, infinite, metal  
+
+**Question 3: Electrostatics**  
+Suggested Keywords: electric, electric, electric  
+
+**Question 4: Electrostatics**  
+Suggested Keywords: _____________, positive, electric  
+
+**Question 5: Unknown**  
+Suggested Keywords: silk, silk, silk  
+
+**Question 6: Magnetism; Electrostatics**  
+Suggested Keywords: rotating, magnetic, formula  
+
+**Question 7: Magnetism**  
+Suggested Keywords: magnetic, magnetic, ________  
+
+**Question 8: Unknown**  
+Suggested Keywords: north-south, south-west, north-west  
+
+**Question 9: AC Circuits**  
+Suggested Keywords: pure, pure, pure  
+
+**Question 10: AC Circuits**  
+Suggested Keywords: voltage, voltage, voltage  
+
+**Question 11: Wave Optics**  
+Suggested Keywords: decreasing, decreasing, reducing  
+
+**Question 12: Wave Optics**  
+Suggested Keywords: light, light, light  
+
+**Question 13: Wave Optics**  
+Suggested Keywords: fashionable, sunglasses, intensity  
+
+**Question 14: Wave Optics; Photoelectric Effect**  
+Suggested Keywords: diffraction, explain, theory  
+
+**Question 15: Electromagnetic Waves**  
+Suggested Keywords: conserved, interfere, intensity  
+
+**Question 16: Wave Optics**  
+Suggested Keywords: spherical, spherical, originates  
+
+**Question 17: Nuclear Physics**  
+Suggested Keywords: particle, daughter, isotopes  
+
+**Question 18: Nuclear Physics**  
+Suggested Keywords: excess, excess, undergoes  
+
+**Question 19: Nuclear Physics**  
+Suggested Keywords: electrons, neutrons, protons  
+
+**Question 20: Electromagnetic Waves; Magnetism; Wave Optics; Electrostatics**  
+Suggested Keywords: difference, electric, fields  
+
+</small>
+
+
+
 ## How to Set It Up
 1. **Grab the Code**:
    ```bash
