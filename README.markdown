@@ -64,7 +64,7 @@ Question Number,Question,Concepts,Suggested Keywords
 ```
 
 ## Config File
-The `config.json` file is your control center:
+The `config.json` file is the control center:
 ```json
 {
   "keywords": {
@@ -89,29 +89,7 @@ Right now, `llm_api.py` fakes an LLM with pre-defined responses based on manual 
 - **Prompt**: "Given the question: Which of the following was a feature of the Harappan civilization? Options: City planning; Iron tools; Vedic rituals; Temple worship, identify the ancient_history concept(s) this question is based on."
 - **Output**: `["Harappan Civilization", "Urban Planning", "Archaeological Sites"]`
 
-To use a real LLM, swap out `simulate_llm_call` in `llm_api.py` with an API call and add your key to `.env`.
 
-## Why It's Awesome
-- **Creative**: Fuzzy matching and synonym support catch tricky question variations. Keyword suggestions keep the system evolving.
-- **Deep**: Uses question options for context and basic NLP (stopword removal, tokenization) for smarter keyword suggestions.
-- **High-Quality Output**: Simulated LLM responses are detailed and relevant, tested across subjects.
-- **Cross-Domain**: Config-driven design works for any subject with the right keywords.
-- **Scalable**: Ready for LLM integration, with logging for production use.
-
-## Extending It
-- **New Subjects**: Add keywords and synonyms to `config.json`.
-- **Real LLM**: Update `llm_api.py` with API calls.
-- **Fancy NLP**: Add TF-IDF or NER in `concept_extractor.py` for next-level extraction.
-
-## Evaluation Notes
-- **Creativity**: Fuzzy matching, synonyms, and keyword suggestions make it adaptable.
-- **Depth**: Context from options and NLP preprocessing improve accuracy.
-- **Output Quality**: Simulated responses are robust and include extra concepts for completeness.
-- **Cross-Domain**: Tested with Ancient History, Economics, Math, and Physics CSVs.
-- **Scalability**: Config file and logging make it production-ready.
-
-## Share It
-Share the repo with `edme-tutor` on GitHub, including your roll number here: [Your Roll Number].
 
 ## Dependencies
 Check `requirements.txt` for the full list (e.g., `fuzzywuzzy`, `nltk`).
