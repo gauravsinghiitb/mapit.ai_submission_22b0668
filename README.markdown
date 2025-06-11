@@ -2,17 +2,27 @@
 # Concept Extraction from Competitive Exam Questions
 
 ## What's This About?
-This project is a Python tool that digs into competitive exam questions (like UPSC Ancient History) and pulls out the key concepts being tested, like "Harappan Civilization" or "Monetary Policy." It's built to be super flexible, handling different subjects and ready to hook up with an LLM (like Anthropic's Claude) down the road. Right now, it uses smart keyword matching with some NLP tricks to get the job done.
+This Python tool analyzes competitive exam questions (e.g., UPSC Ancient History, Economics, Math, Physics) to extract key concepts like "Harappan Civilization" or "Monetary Policy." Designed for flexibility, it handles multiple subjects and is prepared for future integration with a large language model (LLM) like Anthropic's Claude. It currently leverages smart keyword matching with NLP techniques to deliver accurate concept extraction.
 
 ## Cool Features
-- **Smart Keyword Matching**: Finds concepts using exact matches, fuzzy matching (for close calls), and synonyms.
-- **Context-Aware**: Looks at both the question and answer options to nail down the right concepts.
-- **Keyword Suggestions**: Spots new terms in questions to help grow the keyword list.
-- **Multi-Subject Ready**: Works for Ancient History, Economics, Math, Physics, and more with a simple config tweak.
-- **LLM-Ready**: Has a placeholder for LLM integration, with simulated responses for now.
-- **Logging**: Keeps track of what's happening in a log file for easy debugging.
-- **Output**: Spits out concepts to the console and a CSV file, plus suggested keywords for improvement.
+- **Smart Keyword Matching**: Identifies concepts using exact matches, fuzzy matching for close variations, and synonyms for broader coverage.
+- **Context-Aware**: Analyzes both questions and answer options to pinpoint relevant concepts.
+- **Keyword Suggestions**: Detects new terms in questions to expand the keyword list.
+- **Multi-Subject Support**: Configurable for Ancient History, Economics, Math, Physics, and more via a single `config.json`.
+- **LLM-Ready**: Structured to integrate with LLMs in the future, with placeholder logic for now.
+- **Logging**: Records extraction details in `concept_extraction.log` for easy debugging.
+- **Output**: Generates concepts in the console and `output_concepts.csv`, plus suggested keywords for refinement.
 
+## File Structure
+- `main.py`: Entry point for running the tool.
+- `concept_extractor.py`: Core logic for concept extraction.
+- `csv_reader.py`: Handles CSV input for questions.
+- `config.json`: Defines keywords and synonyms for all subjects.
+- `requirements.txt`: Lists dependencies (e.g., `nltk`, `fuzzywuzzy`).
+- `resources/`: Contains question CSVs (`ancient_history.csv`, `economics.csv`, `math.csv`, `physics.csv`).
+- `concept_extraction.log`: Logs extraction details.
+- `output_concepts.csv`: Output file with extracted concepts.
+- 
 # the outputs- 
 <small>
 Loaded 20 Questions for Subject: Physics
@@ -153,10 +163,6 @@ The `config.json` file is the control center:
 }
 ```
 
-## LLM Simulation
-Right now, `llm_api.py` fakes an LLM with pre-defined responses based on manual testing. Example:
-- **Prompt**: "Given the question: Which of the following was a feature of the Harappan civilization? Options: City planning; Iron tools; Vedic rituals; Temple worship, identify the ancient_history concept(s) this question is based on."
-- **Output**: `["Harappan Civilization", "Urban Planning", "Archaeological Sites"]`
 
 
 
